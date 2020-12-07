@@ -34,4 +34,34 @@
     font-weight: 900;
     src: url(./../../assets/fonts/NotoSansCJK/NotoSansCJKtc-Black.otf) format("opentype");
   }
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 300;
+    src: url(./../../assets/fonts/Roboto/Roboto-Light.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url(./../../assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 500;
+    src: url(./../../assets/fonts/Roboto/Roboto-Medium.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: url(./../../assets/fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 300;
+    src: url(./../../assets/fonts/Roboto/Roboto-Black.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: 'Baloo Thambi';
+    font-weight: 400;
+    src: url(./../../assets/fonts/BalooThambi/BalooThambiRegular.ttf) format("truetype");
+  }
 }

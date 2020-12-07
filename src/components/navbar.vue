@@ -2,8 +2,7 @@
   <nav class="navbar navbar__expand">
     <div class="container flex items-center flex-wrap justify-center md:justify-start">
       <a href="#" class="navbar__brand">
-        <img src="./../assets/images/logo.svg" alt="" class="">
-        <!-- <h1 class="">PETPET</h1> -->
+        <h1 class="logo">PETPET</h1>
       </a>
       <toggleMenu class="absolute right-5 top-4 md:hidden" :toggle.sync="isShow" />
       <div class="navbar__collapse font-medium md:-mr-3 md:font-normal"
