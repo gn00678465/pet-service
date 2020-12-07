@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './style/fonts.css';
 @import './style/base.css';
 
 @import './style/components/navbar.css';

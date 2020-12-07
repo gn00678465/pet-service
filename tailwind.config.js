@@ -77,6 +77,10 @@ module.exports = {
         lg: '15px'
       }
     },
+    fontFamily: {
+      'sans': ['Noto Sans CJK TC', 'Roboto', 'sans-serif'],
+      'logo': ['Baloo Thambi 2']
+    },
   },
   variants: {
     extend: {
