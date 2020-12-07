@@ -48,6 +48,7 @@ module.exports = {
       },
     },
     spacing: {
+      0: "0px",
       1: "4px",
       1.5: "6px",
       2: "8px",
@@ -73,7 +74,7 @@ module.exports = {
       padding: {
         DEFAULT: '15px',
         md: '39px',
-        lg: '30px'
+        lg: '15px'
       }
     },
   },
