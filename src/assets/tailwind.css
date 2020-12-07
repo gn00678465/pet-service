@@ -3,3 +3,4 @@
 @tailwind utilities;
 
 @import './style/components/btn.css';
+@import './style/components/btn-groups.css';

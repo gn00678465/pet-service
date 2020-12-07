@@ -7,7 +7,10 @@
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
     </p>
     <h3 class="text-sm md:text-lg lg:text-5xl text-black">Installed CLI Plugins</h3>
-    <button class="btn btn-primary">dddd</button>
+    <div class="btn-groups">
+      <button class="btn btn-primary">dddd</button>
+      <button class="btn btn-outline-primary">dddd</button>
+    </div>
     <ul>
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router" target="_blank" rel="noopener">router</a></li>

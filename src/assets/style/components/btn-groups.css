@@ -1,0 +1,14 @@
+@layer components {
+  .btn-groups {
+    @apply rounded;
+    .btn {
+      @apply rounded-none;
+      &:first-child {
+        @apply rounded-l;
+      }
+      &:last-child {
+        @apply rounded-r;
+      }
+    }
+  }
+}
