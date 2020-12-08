@@ -1,18 +1,26 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import home from '../views/Home.vue';
+import indexPage from '../views/index/Index.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
     component: home,
     children: [
       {
         path: '',
-        component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+        component: indexPage,
+        children: [
+          {
+            path: '',
+            components: {
+              order: () => import(/* webpackChunkName: "index" */ '../views/index/Order.vue'),
+            },
+          },
+        ],
       },
     ],
   },
