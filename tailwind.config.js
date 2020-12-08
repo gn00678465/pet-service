@@ -88,7 +88,8 @@ module.exports = {
       }
     },
     fontFamily: {
-      'sans': ['Roboto', 'Noto\\ Sans\\ CJK\\ TC', 'sans-serif'],
+      'sans': ['Noto\\ Sans\\ CJK\\ TC', 'sans-serif'],
+      'roboto': 'Roboto',
       'logo': 'Baloo\\ Thambi',
     },
   },
