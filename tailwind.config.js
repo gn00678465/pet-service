@@ -13,13 +13,21 @@ module.exports = {
     },
     fontSize: {
       'sm': '.875rem',
+      // 14px
       'base': '1rem',
+      // 16px
       'lg': '1.25rem',
+      // 20px
       'xl': '1.5rem',
+      // 24px
       '2xl': '1.75rem',
+      // 28px
       '3xl': '2rem',
+      // 36px
       '4xl': '2.5rem',
+      // 40px
       '5xl': '3rem',
+      // 48px
     },
     colors: {
       'orange': {
