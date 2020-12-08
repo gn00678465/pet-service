@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import navbar from '@/components/navbar.vue';
-import footer from '@/components/footer.vue';
+import navbar from '@/components/Navbar.vue';
+import footer from '@/components/Footer.vue';
 
 Vue.use(VueRouter);
 

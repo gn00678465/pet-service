@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import toggleMenu from './toggleMenu.vue';
+import toggleMenu from './ToggleMenu.vue';
 
 export default {
   name: 'navbar',
