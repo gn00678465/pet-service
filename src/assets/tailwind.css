@@ -4,6 +4,7 @@
 
 @import './style/fonts.css';
 @import './style/base.css';
+@import './style/grid.css';
 
 @import './style/components/navbar.css';
 @import './style/components/btn.css';

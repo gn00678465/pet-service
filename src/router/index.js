@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import navbar from '@/components/Navbar.vue';
 import footer from '@/components/Footer.vue';
+import subscribe from '@/components/Subscribe.vue';
 
 Vue.use(VueRouter);
 
@@ -12,6 +13,7 @@ const routes = [
     components: {
       navbar,
       footer,
+      subscribe,
     },
   },
   // {
