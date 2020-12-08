@@ -1,8 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import navbar from '@/components/Navbar.vue';
-import footer from '@/components/Footer.vue';
-import subscribe from '@/components/Subscribe.vue';
+import home from '../views/Home.vue';
 
 Vue.use(VueRouter);
 
@@ -10,11 +8,13 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    components: {
-      navbar,
-      footer,
-      subscribe,
-    },
+    component: home,
+    children: [
+      {
+        path: '',
+        component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+      },
+    ],
   },
   // {
   //   path: '/about',
