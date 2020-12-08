@@ -17,6 +17,7 @@ const routes = [
           {
             path: '',
             components: {
+              online: () => import(/* webpackChunkName: "index" */ '../views/index/Online.vue'),
               banner: () => import(/* webpackChunkName: "index" */ '../views/index/Banner.vue'),
               order: () => import(/* webpackChunkName: "index" */ '../views/index/Order.vue'),
             },
