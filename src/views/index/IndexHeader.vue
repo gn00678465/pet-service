@@ -15,12 +15,12 @@
             sm:mb-5 sm:text-left sm:text-lg">
             當您的毛孩有需要時，<span class="md:hidden"><br/></span>幫您找到最合適的服務者！
           </p>
-          <form @submit.prevent action="post" class="row no-gutters">
+          <form @submit.prevent action="post" class="row no-gutters group-rounded">
             <template v-for="select of selectLists">
               <div class="col-12 mb-3 md:mb-0 md:col-auto"
                 :key="select.id" :class="select.widthClass">
                 <select :name="select.name" :id="select.id"
-                class="custom-select text-gray-500 text-lg py-2">
+                class="custom-select text-gray-500 text-lg py-2 md:rounded-none">
                 <option selected disabled>{{ select.id }}</option>
                 <option :value="option" v-for="option of select.options" :key="option">
                   {{ option }}</option>
@@ -29,7 +29,7 @@
             </template>
             <div class="col-12 md:col-auto w-95">
               <input type="submit" value="搜尋" class="btn btn-primary text-lg py-2 w-full
-                md:px-7 md:w-auto">
+                md:px-7 md:w-auto md:rounded-l-none">
             </div>
           </form>
         </div>
@@ -91,6 +91,12 @@ export default {
   }
   .w-95 {
     width: calc((15 / 127) * 100%);
+  }
+  .group-rounded {
+    border-radius: 4px;
+    [class*="col-"]:first-child .custom-select {
+      border-radius: 4px 0px 0px 4px;
+    }
   }
 }
 </style>
