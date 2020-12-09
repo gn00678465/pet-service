@@ -1,0 +1,27 @@
+@layer components {
+  .card {
+    @apply flex flex-col rounded relative min-w-0;
+  }
+  .card {
+    &__header {
+      @apply p-1;
+    }
+    &__body {
+      @apply flex-auto p-3;
+      min-height: 1px;
+    }
+    &__footer {}
+    &__img__top {
+      @apply rounded-t;
+    }
+    &__img__bottom {
+      @apply rounded-b;
+    }
+    &__img__left {
+      @apply rounded-l;
+    }
+    &__img__right {
+      @apply rounded-r;
+    }
+  }
+}

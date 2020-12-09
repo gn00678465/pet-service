@@ -72,11 +72,13 @@ module.exports = {
       10: "40px",
       12: "48px",
       15: "60px",
+      16: "64px",
       18: "72px",
       20: "80px",
       24: "96px",
       25: "100px",
       28: "112px",
+      30: "120px",
       31: "124px",
     },
     container: {
@@ -91,6 +93,9 @@ module.exports = {
       'sans': ['Noto\\ Sans\\ CJK\\ TC', 'sans-serif'],
       'roboto': 'Roboto',
       'logo': 'Baloo\\ Thambi',
+    },
+    boxShadow: {
+      DEFAULT: '0px 3px 6px #00000029',
     },
   },
   variants: {
