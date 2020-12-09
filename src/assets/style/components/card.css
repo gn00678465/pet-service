@@ -11,6 +11,9 @@
       min-height: 1px;
     }
     &__footer {}
+    &__img__overlay {
+      @apply absolute inset-0 p-3;
+    }
     &__img__top {
       @apply rounded-t;
     }

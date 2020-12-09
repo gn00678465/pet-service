@@ -5,7 +5,7 @@
     <ul class="grid sm:grid-flow-col sm:grid-row-2 sm:grid-cols-4 gap-1 sm:gap-1.5 text-white">
       <li v-for="(item) of lists" :key="item.title" :class="{'row-span-2': item.rowSpan}">
         <a href="#" class="rounded relative block">
-          <div class="absolute z-20 h5 inset-0 bg-black bg-opacity-40 hover:bg-opacity-0
+          <div class="card__img__overlay z-20 h5 bg-black bg-opacity-40 hover:bg-opacity-0
             transition-all duration-300 flex items-center justify-center">{{ item.title }}</div>
           <div class="rounded w-full bg-cover bg-no-repeat bg-center"
           :class="item.classes"
