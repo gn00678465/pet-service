@@ -17,6 +17,7 @@ const routes = [
           {
             path: '',
             components: {
+              indexHeader: () => import(/* webpackChunkName: "index" */ '../views/index/IndexHeader.vue'),
               popular: () => import(/* webpackChunkName: "index" */ '../views/index/Popular.vue'),
               online: () => import(/* webpackChunkName: "index" */ '../views/index/Online.vue'),
               banner: () => import(/* webpackChunkName: "index" */ '../views/index/Banner.vue'),
