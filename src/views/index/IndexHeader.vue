@@ -6,7 +6,7 @@
     </div>
     <div class="container pb-12 pt-3 sm:pt-6 sm:pb-26">
       <div class="row items-center no-gutters">
-        <div class="col-12 sm:col-6 sm:offset-3">
+        <div class="col-12 sm:col-7 sm:offset-3">
           <h2 class="mb-1 text-2xl text-primary font-bold text-center
             sm:text-3xl sm:mb-2 sm:text-left">寵物服務，盡在 PETPET</h2>
           <p class="text-lg text-primary font-medium text-center mb-3
