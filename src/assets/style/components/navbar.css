@@ -6,7 +6,7 @@
     }
     &__toggler {
       @apply inline-block py-1;
-      @screen md {
+      @screen sm {
         @apply hidden;
       }
     }
@@ -16,20 +16,20 @@
       &-show {
         max-height: 99em;
       }
-      @screen md {
+      @screen sm {
         flex-basis: auto;
         max-height: initial;
       }
     }
     &__list {
       @apply block;
-      @screen md {
+      @screen sm {
         @apply flex items-center;
       }
     }
     &__link {
       @apply p-3 block text-center hover:bg-gray-200;
-      @screen md {
+      @screen sm {
         @apply rounded;
       }
     }

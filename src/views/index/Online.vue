@@ -2,7 +2,7 @@
   <div class="container text-primary pb-10 sm:pb-20" :style="rootStyle">
     <h2 class="h3 mb-1">線上預約</h2>
     <p class="text-lg font-medium mb-3">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
-    <ul class="grid sm:grid-flow-col sm:grid-row-2 sm:grid-cols-4 gap-1 sm:gap-1.5 text-white">
+    <ul class="grid sm:grid-flow-col sm:grid-row-2 sm:grid-cols-custom gap-1 sm:gap-1.5 text-white">
       <li v-for="(item) of lists" :key="item.title" :class="{'row-span-2': item.rowSpan}">
         <a href="#" class="rounded relative block">
           <div class="card__img__overlay z-20 h5 bg-black bg-opacity-40 hover:bg-opacity-0
@@ -77,7 +77,7 @@ export default {
   min-height: var(--sm-height);
   z-index: 1;
 }
-@screen md {
+@screen sm {
   .img-h {
     min-height: var(--md-height);
   }
@@ -85,12 +85,17 @@ export default {
     min-height: var(--md-height-x2);
   }
 }
-@screen lg {
+@screen md {
   .img-h {
     min-height: var(--lg-height);
   }
   .img-h-x2 {
     min-height: var(--lg-height-x2);
+  }
+}
+@responsive {
+  .grid-cols-custom {
+    grid-template-columns: 33% 27% 22% 18%;
   }
 }
 </style>
