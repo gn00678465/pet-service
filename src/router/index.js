@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import home from '../views/Home.vue';
 import indexPage from '../views/index/Index.vue';
+import popular from '../components/Popular.vue';
 
 Vue.use(VueRouter);
 
@@ -18,11 +19,15 @@ const routes = [
             path: '',
             components: {
               indexHeader: () => import(/* webpackChunkName: "index" */ '../views/index/IndexHeader.vue'),
-              popular: () => import(/* webpackChunkName: "index" */ '../views/index/Popular.vue'),
+              popular,
               online: () => import(/* webpackChunkName: "index" */ '../views/index/Online.vue'),
               banner: () => import(/* webpackChunkName: "index" */ '../views/index/Banner.vue'),
               order: () => import(/* webpackChunkName: "index" */ '../views/index/Order.vue'),
             },
+          },
+          {
+            path: 'lodge',
+            components: {},
           },
         ],
       },

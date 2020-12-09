@@ -66,25 +66,25 @@ export default {
     return {
       sitterList: [
         {
-          imgUrl: require('../../assets/images/index-2.jpeg'),
+          imgUrl: require('../assets/images/index-2.jpeg'),
           name: 'Jamie',
-          photo: require('../../assets/images/person-1.png'),
+          photo: require('../assets/images/person-1.png'),
           skills: ['寄宿', '美容', '寵物行為訓練'],
           evaluate: 198,
           finished: 580,
         },
         {
-          imgUrl: require('../../assets/images/index-3.jpeg'),
+          imgUrl: require('../assets/images/index-3.jpeg'),
           name: 'Eric',
-          photo: require('../../assets/images/person-2.png'),
+          photo: require('../assets/images/person-2.png'),
           skills: ['寄宿', '美容'],
           evaluate: 76,
           finished: 208,
         },
         {
-          imgUrl: require('../../assets/images/index-4.jpeg'),
+          imgUrl: require('../assets/images/index-4.jpeg'),
           name: 'Yvonne',
-          photo: require('../../assets/images/person-3.png'),
+          photo: require('../assets/images/person-3.png'),
           skills: ['寄宿', '美容', '寵物行為訓練'],
           evaluate: 52,
           finished: 196,
