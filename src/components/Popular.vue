@@ -24,7 +24,7 @@
                 <p class="mb-3">{{ sitter.skills.join('、') }}</p>
                 <button class="mb-6 py-3 btn btn-primary px-16">預約</button>
                 <ul class="flex mb-7">
-                  <li class="mr-15 md:mr-8 lg:mr-15">
+                  <li class="mr-15 sm:mr-8 lg:mr-15">
                     <p class="mb-3">獲得評價</p>
                     <p><span class="h4 mr-1">{{ sitter.evaluate }}</span>則</p>
                   </li>

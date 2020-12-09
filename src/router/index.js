@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import home from '../views/Home.vue';
 import indexPage from '../views/index/Index.vue';
 import popular from '../components/Popular.vue';
+import lodgePage from '../views/lodge/Lodge.vue';
 
 Vue.use(VueRouter);
 
@@ -25,9 +26,17 @@ const routes = [
               order: () => import(/* webpackChunkName: "index" */ '../views/index/Order.vue'),
             },
           },
+        ],
+      },
+      {
+        path: 'lodge',
+        component: lodgePage,
+        children: [
           {
-            path: 'lodge',
-            components: {},
+            path: '',
+            components: {
+              popular,
+            },
           },
         ],
       },

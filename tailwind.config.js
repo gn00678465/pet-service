@@ -4,12 +4,14 @@ module.exports = {
   theme: {
     extend: {},
     screens: {
-      'sm': '640px',
-      // => @media (min-width: 640px) { ... }
-      'md': '769px',
+      'sm': '540px',
+      // => @media (min-width: 540px) { ... }
+      'md': '768px',
       // => @media (min-width: 768px) { ... }
-      'lg': '1140px',
-      // => @media (min-width: 1024px) { ... }
+      'lg': '960px',
+      // => @media (min-width: 960px) { ... }
+      'xl': '1140px',
+      // => @media (min-width: 1140px) { ... }
     },
     fontSize: {
       'sm': '.875rem',

@@ -95,7 +95,7 @@ export default {
 }
 @responsive {
   .grid-cols-custom {
-    grid-template-columns: 33% 27% 22% 18%;
+    grid-template-columns: 1fr 25% 22% 18%;
   }
 }
 </style>
