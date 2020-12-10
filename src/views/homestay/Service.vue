@@ -2,18 +2,18 @@
   <div class="container pb-15 lg:pb-20">
     <ul class="row -mb-3 sm:-mb-5 md:-mb-8">
       <li class="col-6 mb-3 sm:col-4 sm:mb-5 lg:col-3 md:mb-8"
-        v-for="service of serviceLists" :key="service.name">
+        v-for="item of homestayListsArr" :key="item.name">
         <a class="card shadow min-h-full transform-gpu hover:scale-105 transition-transform">
           <div class="card__img__top h-32 bg-cover bg-center"
-            :style="{backgroundImage: `url(${service.imgUrl})`}"></div>
+            :style="{backgroundImage: `url(${item.image})`}"></div>
           <div class="card__body bg-gray-100 pt-2 pb-5 px-4 text-primary">
-            <h5 class="mb-1.5">{{ service.name }}</h5>
+            <h5 class="mb-1.5">{{ item.name }}</h5>
             <div class="mb-1.5">
-              <template v-for="num in service.rating">
+              <template v-for="num in item.rating">
                 <span class="material-icons text-base text-light mr-1" :key="num">star</span>
               </template>
             </div>
-            <p class="text-sm sm:mb-5">{{ service.content.join('、') }}</p>
+            <p class="text-sm sm:mb-5">{{ item.service.join('、') }}</p>
           </div>
           <div class="card__footer">
             <div class="btn-groups">
@@ -32,6 +32,7 @@
 
 <script>
 import pagination from '@/components/Pagination.vue';
+import data from '@/assets/data.json';
 
 export default {
   components: {
@@ -96,8 +97,33 @@ export default {
         path: '',
       },
     ],
+    homestayLists: [],
     page: 1,
   }),
+  mounted() {
+    this.getHomestayLists();
+  },
+  methods: {
+    getHomestayLists() {
+      const keys = Object.keys(data.homestayLists);
+      const arr = [];
+      keys.forEach((key) => {
+        arr.push(data.homestayLists[key]);
+      });
+      this.homestayLists = arr;
+    },
+  },
+  computed: {
+    homestayListsArr() {
+      const arr = [];
+      this.homestayLists.forEach((item) => {
+        const newItem = item;
+        delete newItem.detial;
+        arr.push(newItem);
+      });
+      return arr;
+    },
+  },
 };
 </script>
 

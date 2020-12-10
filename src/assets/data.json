@@ -25,5 +25,660 @@
       "finished": 196
     }
   ],
-  "homestayLists": []
+  "homestayLists": {
+    "寵屋屋": {
+      "id": "",
+      "image": "./images/homestay-2.jpeg",
+      "name": "寵屋屋",
+      "rating": 5,
+      "service": ["寄宿", "美容洗澡", "到府保姆"],
+      "detial": {
+        "images": [
+          "images/homestay-3.jpeg",
+          "images/index-5.jpeg",
+          "images/detail-1.jpeg",
+          "images/detail2.jpeg"
+        ],
+        "address": "高雄市鹽埕區七賢三路123號",
+        "about": "家中有5隻貓寶貝，對貓咪有瘋狂的熱愛 。<br />目前已經照顧超過30位狗狗貓咪朋友！對於我來說，能夠與你們相遇都是緣分！",
+        "experience": "曾接手過數次奶貓，照顧後送養成功，目前都是健健康康的毛孩。",
+        "license": "寵物美容丙級技術證",
+        "provide": ["貓砂盆", "罐頭", "乾飼料"],
+        "home_range": "想去的任何地方",
+        "service_area": "高雄市",
+        "service": [
+          {
+            "item": "寄宿",
+            "price": 450,
+            "description": null
+          },
+          {
+            "item": "美容洗澡",
+            "price": 500,
+            "description": null
+          },
+          {
+            "item": "到府保姆",
+            "price": 550,
+            "description": null
+          }
+        ],
+        "comments": [
+          {
+            "name": "葉子",
+            "imgUrl": "images/person-4.png",
+            "commentTime": "Oct 17 2020",
+            "rating": 5,
+            "content": "服務很秋！"
+          },
+          {
+            "name": "Ray",
+            "imgUrl": "images/person-6.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "超喜歡超棒超讚的..."
+          },
+          {
+            "name": "俊儀",
+            "imgUrl": "images/person-8.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "讚的！"
+          },
+          {
+            "name": "Joanne",
+            "imgUrl": "images/person-5.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "貓完全不想回家了。"
+          },
+          {
+            "name": "穎旻",
+            "imgUrl": "images/person-7.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "下次還會麻煩您～"
+          },
+          {
+            "name": "子琪",
+            "imgUrl": "images/person-9.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "服務很棒耶哈哈哈！"
+          }
+        ]
+      }
+    },
+    "毛孩好家": {
+      "id": "",
+      "image": "images/homestay-3.jpeg",
+      "name": "毛孩好家",
+      "rating": 5,
+      "service": ["寄宿", "美容洗澡", "到府保姆"],
+      "detial": {
+        "images": [
+          "images/homestay-3.jpeg",
+          "images/index-5.jpeg",
+          "images/detail-1.jpeg",
+          "images/detail2.jpeg"
+        ],
+        "address": "高雄市鹽埕區七賢三路123號",
+        "about": "家中有5隻貓寶貝，對貓咪有瘋狂的熱愛 。<br />目前已經照顧超過30位狗狗貓咪朋友！對於我來說，能夠與你們相遇都是緣分！",
+        "experience": "曾接手過數次奶貓，照顧後送養成功，目前都是健健康康的毛孩。",
+        "license": "寵物美容丙級技術證",
+        "provide": ["貓砂盆", "罐頭", "乾飼料"],
+        "home_range": "想去的任何地方",
+        "service_area": "高雄市",
+        "service": [
+          {
+            "item": "寄宿",
+            "price": 450,
+            "description": null
+          },
+          {
+            "item": "美容洗澡",
+            "price": 500,
+            "description": null
+          },
+          {
+            "item": "到府保姆",
+            "price": 550,
+            "description": null
+          }
+        ],
+        "comments": [
+          {
+            "name": "葉子",
+            "imgUrl": "images/person-4.png",
+            "commentTime": "Oct 17 2020",
+            "rating": 5,
+            "content": "服務很秋！"
+          },
+          {
+            "name": "Ray",
+            "imgUrl": "images/person-6.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "超喜歡超棒超讚的..."
+          },
+          {
+            "name": "俊儀",
+            "imgUrl": "images/person-8.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "讚的！"
+          },
+          {
+            "name": "Joanne",
+            "imgUrl": "images/person-5.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "貓完全不想回家了。"
+          },
+          {
+            "name": "穎旻",
+            "imgUrl": "images/person-7.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "下次還會麻煩您～"
+          },
+          {
+            "name": "子琪",
+            "imgUrl": "images/person-9.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "服務很棒耶哈哈哈！"
+          }
+        ]
+      }
+    },
+    "妖貓X僕SS": {
+      "id": "",
+      "image": "images/homestay-4.jpeg",
+      "name": "妖貓X僕SS",
+      "rating": 5,
+      "service": ["寄宿", "美容洗澡"],
+      "detial": {
+        "images": [
+          "images/homestay-3.jpeg",
+          "images/index-5.jpeg",
+          "images/detail-1.jpeg",
+          "images/detail2.jpeg"
+        ],
+        "address": "高雄市鹽埕區七賢三路123號",
+        "about": "家中有5隻貓寶貝，對貓咪有瘋狂的熱愛 。<br />目前已經照顧超過30位狗狗貓咪朋友！對於我來說，能夠與你們相遇都是緣分！",
+        "experience": "曾接手過數次奶貓，照顧後送養成功，目前都是健健康康的毛孩。",
+        "license": "寵物美容丙級技術證",
+        "provide": ["貓砂盆", "罐頭", "乾飼料"],
+        "home_range": "想去的任何地方",
+        "service_area": "高雄市",
+        "service": [
+          {
+            "item": "寄宿",
+            "price": 450,
+            "description": null
+          },
+          {
+            "item": "美容洗澡",
+            "price": 500,
+            "description": null
+          }
+        ],
+        "comments": [
+          {
+            "name": "葉子",
+            "imgUrl": "images/person-4.png",
+            "commentTime": "Oct 17 2020",
+            "rating": 5,
+            "content": "服務很秋！"
+          },
+          {
+            "name": "Ray",
+            "imgUrl": "images/person-6.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "超喜歡超棒超讚的..."
+          },
+          {
+            "name": "俊儀",
+            "imgUrl": "images/person-8.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "讚的！"
+          },
+          {
+            "name": "Joanne",
+            "imgUrl": "images/person-5.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "貓完全不想回家了。"
+          },
+          {
+            "name": "穎旻",
+            "imgUrl": "images/person-7.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "下次還會麻煩您～"
+          },
+          {
+            "name": "子琪",
+            "imgUrl": "images/person-9.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "服務很棒耶哈哈哈！"
+          }
+        ]
+      }
+    },
+    "貓是主我是僕": {
+      "id": "",
+      "image": "images/homestay-5.jpeg",
+      "name": "貓是主我是僕",
+      "rating": 5,
+      "service": ["寄宿", "美容洗澡", "到府保姆"],
+      "detial": {
+        "images": [
+          "images/homestay-3.jpeg",
+          "images/index-5.jpeg",
+          "images/detail-1.jpeg",
+          "images/detail2.jpeg"
+        ],
+        "address": "高雄市鹽埕區七賢三路123號",
+        "about": "家中有5隻貓寶貝，對貓咪有瘋狂的熱愛 。<br />目前已經照顧超過30位狗狗貓咪朋友！對於我來說，能夠與你們相遇都是緣分！",
+        "experience": "曾接手過數次奶貓，照顧後送養成功，目前都是健健康康的毛孩。",
+        "license": "寵物美容丙級技術證",
+        "provide": ["貓砂盆", "罐頭", "乾飼料"],
+        "home_range": "想去的任何地方",
+        "service_area": "高雄市",
+        "service": [
+          {
+            "item": "寄宿",
+            "price": 450,
+            "description": null
+          },
+          {
+            "item": "美容洗澡",
+            "price": 500,
+            "description": null
+          },
+          {
+            "item": "到府保姆",
+            "price": 550,
+            "description": null
+          }
+        ],
+        "comments": [
+          {
+            "name": "葉子",
+            "imgUrl": "images/person-4.png",
+            "commentTime": "Oct 17 2020",
+            "rating": 5,
+            "content": "服務很秋！"
+          },
+          {
+            "name": "Ray",
+            "imgUrl": "images/person-6.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "超喜歡超棒超讚的..."
+          },
+          {
+            "name": "俊儀",
+            "imgUrl": "images/person-8.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "讚的！"
+          },
+          {
+            "name": "Joanne",
+            "imgUrl": "images/person-5.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "貓完全不想回家了。"
+          },
+          {
+            "name": "穎旻",
+            "imgUrl": "images/person-7.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "下次還會麻煩您～"
+          },
+          {
+            "name": "子琪",
+            "imgUrl": "images/person-9.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "服務很棒耶哈哈哈！"
+          }
+        ]
+      }
+    },
+    "汪汪隊": {
+      "id": "",
+      "image": "images/homestay-6.jpeg",
+      "name": "汪汪隊",
+      "rating": 5,
+      "service": ["寄宿", "美容洗澡", "到府保姆", "寵物行為訓練"],
+      "detial": {
+        "images": [
+          "images/homestay-3.jpeg",
+          "images/index-5.jpeg",
+          "images/detail-1.jpeg",
+          "images/detail2.jpeg"
+        ],
+        "address": "高雄市鹽埕區七賢三路123號",
+        "about": "家中有5隻貓寶貝，對貓咪有瘋狂的熱愛 。<br />目前已經照顧超過30位狗狗貓咪朋友！對於我來說，能夠與你們相遇都是緣分！",
+        "experience": "曾接手過數次奶貓，照顧後送養成功，目前都是健健康康的毛孩。",
+        "license": "寵物美容丙級技術證",
+        "provide": ["貓砂盆", "罐頭", "乾飼料"],
+        "home_range": "想去的任何地方",
+        "service_area": "高雄市",
+        "service": [
+          {
+            "item": "寄宿",
+            "price": 450,
+            "description": null
+          },
+          {
+            "item": "美容洗澡",
+            "price": 500,
+            "description": null
+          },
+          {
+            "item": "到府保姆",
+            "price": 550,
+            "description": null
+          },
+          {
+            "item": "寵物行為訓練",
+            "price": 600,
+            "description": null
+          }
+        ],
+        "comments": [
+          {
+            "name": "葉子",
+            "imgUrl": "images/person-4.png",
+            "commentTime": "Oct 17 2020",
+            "rating": 5,
+            "content": "服務很秋！"
+          },
+          {
+            "name": "Ray",
+            "imgUrl": "images/person-6.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "超喜歡超棒超讚的..."
+          },
+          {
+            "name": "俊儀",
+            "imgUrl": "images/person-8.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "讚的！"
+          },
+          {
+            "name": "Joanne",
+            "imgUrl": "images/person-5.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "貓完全不想回家了。"
+          },
+          {
+            "name": "穎旻",
+            "imgUrl": "images/person-7.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "下次還會麻煩您～"
+          },
+          {
+            "name": "子琪",
+            "imgUrl": "images/person-9.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "服務很棒耶哈哈哈！"
+          }
+        ]
+      }
+    },
+    "卯咪": {
+      "id": "",
+      "image": "images/homestay-7.jpeg",
+      "name": "卯咪",
+      "rating": 5,
+      "service": ["寄宿", "寵物行為訓練"],
+      "detial": {
+        "images": [
+          "images/homestay-3.jpeg",
+          "images/index-5.jpeg",
+          "images/detail-1.jpeg",
+          "images/detail2.jpeg"
+        ],
+        "address": "高雄市鹽埕區七賢三路123號",
+        "about": "家中有5隻貓寶貝，對貓咪有瘋狂的熱愛 。<br />目前已經照顧超過30位狗狗貓咪朋友！對於我來說，能夠與你們相遇都是緣分！",
+        "experience": "曾接手過數次奶貓，照顧後送養成功，目前都是健健康康的毛孩。",
+        "license": "寵物美容丙級技術證",
+        "provide": ["貓砂盆", "罐頭", "乾飼料"],
+        "home_range": "想去的任何地方",
+        "service_area": "高雄市",
+        "service": [
+          {
+            "item": "寄宿",
+            "price": 450,
+            "description": null
+          },
+          {
+            "item": "寵物行為訓練",
+            "price": 600,
+            "description": null
+          }
+        ],
+        "comments": [
+          {
+            "name": "葉子",
+            "imgUrl": "images/person-4.png",
+            "commentTime": "Oct 17 2020",
+            "rating": 5,
+            "content": "服務很秋！"
+          },
+          {
+            "name": "Ray",
+            "imgUrl": "images/person-6.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "超喜歡超棒超讚的..."
+          },
+          {
+            "name": "俊儀",
+            "imgUrl": "images/person-8.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "讚的！"
+          },
+          {
+            "name": "Joanne",
+            "imgUrl": "images/person-5.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "貓完全不想回家了。"
+          },
+          {
+            "name": "穎旻",
+            "imgUrl": "images/person-7.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "下次還會麻煩您～"
+          },
+          {
+            "name": "子琪",
+            "imgUrl": "images/person-9.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "服務很棒耶哈哈哈！"
+          }
+        ]
+      }
+    },
+    "貓狗大戰": {
+      "id": "",
+      "image": "images/index-2.jpeg",
+      "name": "寵屋屋",
+      "rating": 5,
+      "service": ["寄宿", "美容洗澡", "到府保姆"],
+      "detial": {
+        "images": [
+          "images/homestay-3.jpeg",
+          "images/index-5.jpeg",
+          "images/detail-1.jpeg",
+          "images/detail2.jpeg"
+        ],
+        "address": "高雄市鹽埕區七賢三路123號",
+        "about": "家中有5隻貓寶貝，對貓咪有瘋狂的熱愛 。<br />目前已經照顧超過30位狗狗貓咪朋友！對於我來說，能夠與你們相遇都是緣分！",
+        "experience": "曾接手過數次奶貓，照顧後送養成功，目前都是健健康康的毛孩。",
+        "license": "寵物美容丙級技術證",
+        "provide": ["貓砂盆", "罐頭", "乾飼料"],
+        "home_range": "想去的任何地方",
+        "service_area": "高雄市",
+        "service": [
+          {
+            "item": "寄宿",
+            "price": 450,
+            "description": null
+          },
+          {
+            "item": "美容洗澡",
+            "price": 500,
+            "description": null
+          },
+          {
+            "item": "到府保姆",
+            "price": 550,
+            "description": null
+          }
+        ],
+        "comments": [
+          {
+            "name": "葉子",
+            "imgUrl": "images/person-4.png",
+            "commentTime": "Oct 17 2020",
+            "rating": 5,
+            "content": "服務很秋！"
+          },
+          {
+            "name": "Ray",
+            "imgUrl": "images/person-6.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "超喜歡超棒超讚的..."
+          },
+          {
+            "name": "俊儀",
+            "imgUrl": "images/person-8.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "讚的！"
+          },
+          {
+            "name": "Joanne",
+            "imgUrl": "images/person-5.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "貓完全不想回家了。"
+          },
+          {
+            "name": "穎旻",
+            "imgUrl": "images/person-7.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "下次還會麻煩您～"
+          },
+          {
+            "name": "子琪",
+            "imgUrl": "images/person-9.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "服務很棒耶哈哈哈！"
+          }
+        ]
+      }
+    },
+    "萌寵底家": {
+      "id": "",
+      "image": "images/homestay-8.jpeg",
+      "name": "萌寵底家",
+      "rating": 5,
+      "service": ["寄宿", "到府保姆"],
+      "detial": {
+        "images": [
+          "images/homestay-3.jpeg",
+          "images/index-5.jpeg",
+          "images/detail-1.jpeg",
+          "images/detail2.jpeg"
+        ],
+        "address": "高雄市鹽埕區七賢三路123號",
+        "about": "家中有5隻貓寶貝，對貓咪有瘋狂的熱愛 。<br />目前已經照顧超過30位狗狗貓咪朋友！對於我來說，能夠與你們相遇都是緣分！",
+        "experience": "曾接手過數次奶貓，照顧後送養成功，目前都是健健康康的毛孩。",
+        "license": "寵物美容丙級技術證",
+        "provide": ["貓砂盆", "罐頭", "乾飼料"],
+        "home_range": "想去的任何地方",
+        "service_area": "高雄市",
+        "service": [
+          {
+            "item": "寄宿",
+            "price": 450,
+            "description": null
+          },
+          {
+            "item": "到府保姆",
+            "price": 550,
+            "description": null
+          }
+        ],
+        "comments": [
+          {
+            "name": "葉子",
+            "imgUrl": "images/person-4.png",
+            "commentTime": "Oct 17 2020",
+            "rating": 5,
+            "content": "服務很秋！"
+          },
+          {
+            "name": "Ray",
+            "imgUrl": "images/person-6.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "超喜歡超棒超讚的..."
+          },
+          {
+            "name": "俊儀",
+            "imgUrl": "images/person-8.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "讚的！"
+          },
+          {
+            "name": "Joanne",
+            "imgUrl": "images/person-5.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "貓完全不想回家了。"
+          },
+          {
+            "name": "穎旻",
+            "imgUrl": "images/person-7.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "下次還會麻煩您～"
+          },
+          {
+            "name": "子琪",
+            "imgUrl": "images/person-9.png",
+            "comment_time": "Oct 17 2020",
+            "rating": 5,
+            "content": "服務很棒耶哈哈哈！"
+          }
+        ]
+      }
+    }
+  }
 }

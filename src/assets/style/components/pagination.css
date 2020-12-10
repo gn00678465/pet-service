@@ -20,7 +20,7 @@
       &__link:not(.page__link--active) {
         @apply text-primary hover:bg-gray-200;
       }
-      &__link-active {
+      &__link--active {
         @apply bg-primary text-white cursor-auto;
       }
     }

@@ -3,7 +3,7 @@ import VueRouter from 'vue-router';
 import home from '../views/Home.vue';
 import indexPage from '../views/index/Index.vue';
 import popular from '../components/Popular.vue';
-import lodgePage from '../views/lodge/Lodge.vue';
+import homestayPage from '../views/homestay/Homestay.vue';
 import detialPage from '../views/detial/Detial.vue';
 
 Vue.use(VueRouter);
@@ -30,21 +30,21 @@ const routes = [
         ],
       },
       {
-        path: 'lodge',
-        component: lodgePage,
+        path: 'homestay',
+        component: homestayPage,
         children: [
           {
             path: '',
             components: {
-              lodgeHeader: () => import(/* webpackChunkName: "lodge" */ '../views/lodge/LodgeHeader.vue'),
-              service: () => import(/* webpackChunkName: "lodge" */ '../views/lodge/Service.vue'),
+              homestayHeader: () => import(/* webpackChunkName: "homestay" */ '../views/homestay/HomestayHeader.vue'),
+              service: () => import(/* webpackChunkName: "homestay" */ '../views/homestay/Service.vue'),
               popular,
             },
           },
         ],
       },
       {
-        path: 'lodge/:id',
+        path: 'homestay/:id',
         component: detialPage,
         children: [
           {
@@ -53,7 +53,7 @@ const routes = [
               detial_img: () => import(/* webpackChunkName: "detial" */ '../views/detial/Detial_img.vue'),
               detial_info: () => import(/* webpackChunkName: "detial" */ '../views/detial/Detial_info.vue'),
               detial_about: () => import(/* webpackChunkName: "detial" */ '../views/detial/Detial_about.vue'),
-              service: () => import(/* webpackChunkName: "lodge" */ '../views/lodge/Service.vue'),
+              service: () => import(/* webpackChunkName: "homestay" */ '../views/homestay/Service.vue'),
               comment: () => import(/* webpackChunkName: "detial" */ '../views/detial/Comment.vue'),
             },
           },
@@ -61,14 +61,6 @@ const routes = [
       },
     ],
   },
-  // {
-  //   path: '/about',
-  //   name: 'About',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
-  // },
 ];
 
 const router = new VueRouter({

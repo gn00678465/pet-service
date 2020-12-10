@@ -1,6 +1,6 @@
 <template>
   <div>
-    <router-view name="lodgeHeader"/>
+    <router-view name="homestayHeader"/>
     <router-view name="popular"/>
     <router-view name="service"/>
   </div>
