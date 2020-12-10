@@ -4,13 +4,15 @@
     <p class="text-lg font-medium mb-3">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
     <ul class="grid sm:grid-flow-col sm:grid-row-2 sm:grid-cols-custom gap-1 sm:gap-1.5 text-white">
       <li v-for="(item) of lists" :key="item.title" :class="{'row-span-2': item.rowSpan}">
-        <a href="#" class="rounded relative block">
-          <div class="card__img__overlay z-20 h5 bg-black bg-opacity-40 hover:bg-opacity-0
-            transition-all duration-300 flex items-center justify-center">{{ item.title }}</div>
+        <router-link :to="item.path" class="card">
           <div class="rounded w-full bg-cover bg-no-repeat bg-center"
           :class="item.classes"
           :style="{ backgroundImage: `url(${item.imgUrl})` }"></div>
-        </a>
+          <div class="card__img__overlay z-20 h5 bg-black bg-opacity-40 hover:bg-opacity-0
+            transition-all duration-300 flex items-center justify-center rounded">
+            {{ item.title }}
+          </div>
+        </router-link>
       </li>
     </ul>
   </div>
@@ -23,31 +25,36 @@ export default {
       lists: [
         {
           title: '寵物寄宿',
-          imgUrl: require('../../assets/images/index-5.jpeg'),
+          path: 'homestay',
+          imgUrl: './images/index-5.jpeg',
           rowSpan: true,
           classes: 'img-h img-h-x2 row-span-2',
         },
         {
           title: '寵物美容',
-          imgUrl: require('../../assets/images/index-6.jpeg'),
+          path: '/',
+          imgUrl: './images/index-6.jpeg',
           rowSpan: true,
           classes: 'img-h img-h-x2',
         },
         {
           title: '到府照顧',
-          imgUrl: require('../../assets/images/index-7.jpeg'),
+          path: '/',
+          imgUrl: './images/index-7.jpeg',
           rowSpan: false,
           classes: 'img-h',
         },
         {
           title: '遛狗保姆',
-          imgUrl: require('../../assets/images/index-8.jpeg'),
+          path: '/',
+          imgUrl: './images/index-8.jpeg',
           rowSpan: false,
           classes: 'img-h',
         },
         {
           title: '行為訓練',
-          imgUrl: require('../../assets/images/index-3.jpeg'),
+          path: '/',
+          imgUrl: './images/index-3.jpeg',
           rowSpan: true,
           classes: 'img-h img-h-x2',
         },

@@ -7,7 +7,7 @@
           <h4 :class="items.titleClass">{{ items.title }}</h4>
         </li>
         <template v-for="link of items.links" >
-          <li :key="link">
+          <li :key="link.link">
             <router-link class="inline-block py-3" :to="link.path">{{ link.link }}</router-link>
           </li>
         </template>
