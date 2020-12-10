@@ -75,6 +75,9 @@ export default {
     nextHandler() {
       popularSwiper.slideNext();
     },
+    swiperUpdate() {
+      popularSwiper.slideNext();
+    },
   },
   beforeDestroy() {
     popularSwiper = null;

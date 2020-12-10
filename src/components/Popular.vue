@@ -8,11 +8,10 @@
         :columnBetween="12"
         :rowBetween="30"
         :slidesPerView="3"
-        :loop="true"
         ref="popularSwiper"
         >
         <template #slideArea>
-          <div class="swiper-slide" v-for="sitter of sitterList" :key="sitter.name">
+          <div class="swiper-slide" v-for="sitter of popularSitters" :key="sitter.name">
             <div class="card text-primary shadow">
               <div class="card__header h-30">
                 <div class="bg-cover bg-center w-full h-full"
@@ -57,6 +56,7 @@
 
 <script>
 import swiper from '@/components/Swiper.vue';
+import data from '@/assets/data.json';
 
 export default {
   components: {
@@ -64,33 +64,12 @@ export default {
   },
   data() {
     return {
-      sitterList: [
-        {
-          imgUrl: require('../assets/images/index-2.jpeg'),
-          name: 'Jamie',
-          photo: require('../assets/images/person-1.png'),
-          skills: ['寄宿', '美容', '寵物行為訓練'],
-          evaluate: 198,
-          finished: 580,
-        },
-        {
-          imgUrl: require('../assets/images/index-3.jpeg'),
-          name: 'Eric',
-          photo: require('../assets/images/person-2.png'),
-          skills: ['寄宿', '美容'],
-          evaluate: 76,
-          finished: 208,
-        },
-        {
-          imgUrl: require('../assets/images/index-4.jpeg'),
-          name: 'Yvonne',
-          photo: require('../assets/images/person-3.png'),
-          skills: ['寄宿', '美容', '寵物行為訓練'],
-          evaluate: 52,
-          finished: 196,
-        },
-      ],
+      popularSitters: [],
     };
+  },
+  mounted() {
+    const vm = this;
+    vm.popularSitters = data.popularSitters;
   },
   methods: {
     prevHandler() {
@@ -98,6 +77,11 @@ export default {
     },
     nextHandler() {
       this.$refs.popularSwiper.nextHandler();
+    },
+  },
+  watch: {
+    popularSitters() {
+      this.$refs.popularSwiper.swiperUpdate();
     },
   },
 };
