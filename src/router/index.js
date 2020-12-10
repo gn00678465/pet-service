@@ -51,7 +51,9 @@ const routes = [
             path: '',
             components: {
               detial_img: () => import(/* webpackChunkName: "detial" */ '../views/detial/Detial_img.vue'),
+              detial_info: () => import(/* webpackChunkName: "detial" */ '../views/detial/Detial_info.vue'),
               service: () => import(/* webpackChunkName: "lodge" */ '../views/lodge/Service.vue'),
+              comment: () => import(/* webpackChunkName: "detial" */ '../views/detial/Comment.vue'),
             },
           },
         ],
