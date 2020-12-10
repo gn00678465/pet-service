@@ -27,7 +27,7 @@
   ],
   "homestayLists": {
     "寵屋屋": {
-      "id": "",
+      "id": "goodHouse",
       "image": "./images/homestay-2.jpeg",
       "name": "寵屋屋",
       "rating": 5,
@@ -110,7 +110,7 @@
       }
     },
     "毛孩好家": {
-      "id": "",
+      "id": "goodHouse",
       "image": "images/homestay-3.jpeg",
       "name": "毛孩好家",
       "rating": 5,
@@ -193,7 +193,7 @@
       }
     },
     "妖貓X僕SS": {
-      "id": "",
+      "id": "goodHouse",
       "image": "images/homestay-4.jpeg",
       "name": "妖貓X僕SS",
       "rating": 5,
@@ -271,7 +271,7 @@
       }
     },
     "貓是主我是僕": {
-      "id": "",
+      "id": "goodHouse",
       "image": "images/homestay-5.jpeg",
       "name": "貓是主我是僕",
       "rating": 5,
@@ -354,7 +354,7 @@
       }
     },
     "汪汪隊": {
-      "id": "",
+      "id": "goodHouse",
       "image": "images/homestay-6.jpeg",
       "name": "汪汪隊",
       "rating": 5,
@@ -442,7 +442,7 @@
       }
     },
     "卯咪": {
-      "id": "",
+      "id": "goodHouse",
       "image": "images/homestay-7.jpeg",
       "name": "卯咪",
       "rating": 5,
@@ -520,7 +520,7 @@
       }
     },
     "貓狗大戰": {
-      "id": "",
+      "id": "goodHouse",
       "image": "images/index-2.jpeg",
       "name": "貓狗大戰",
       "rating": 5,
@@ -603,7 +603,7 @@
       }
     },
     "萌寵底家": {
-      "id": "",
+      "id": "goodHouse",
       "image": "images/homestay-8.jpeg",
       "name": "萌寵底家",
       "rating": 5,

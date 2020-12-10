@@ -4,7 +4,7 @@
       <li class="col-6 mb-3 sm:col-4 sm:mb-5 lg:col-3 md:mb-8"
         v-for="item of homestayListsArr" :key="item.name">
         <card
-        :path="item.id"
+        :path="`homestay/${item.id}`"
         :name="item.name"
         :imgUrl="item.image"
         :rating="item.rating"

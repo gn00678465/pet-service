@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/"
+  <router-link :to="path"
     class="card shadow min-h-full transform-gpu hover:scale-105 transition-transform">
     <div class="card__img__top h-32 bg-cover bg-center"
       :style="{backgroundImage: `url(${imgUrl})`}"></div>
@@ -21,10 +21,10 @@
 <script>
 export default {
   props: {
-    // path: {
-    //   type: String,
-    //   required: true,
-    // },
+    path: {
+      type: String,
+      required: true,
+    },
     name: {
       type: String,
       required: true,
