@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="container">
+    <div class="container mb-15">
       <div class="row sm:py-15">
         <div class="col-12 order-1 lodge-header-height
           sm:col-7 sm:order-2 lg:col-8">
@@ -10,8 +10,8 @@
         </div>
         <div class="text-primary text-center py-3 col-12 order-2
           sm:col-5 sm:order-1 sm:text-left sm:flex flex-col justify-center lg:col-4">
-          <h2 class="h4 mb-1 sm:mb-2 lg:mb-4">寵物寄宿</h2>
-          <p class="text-lg font-medium">給您的毛孩最舒適的環境</p>
+          <h2 class="h4 mb-1 sm:text-4xl sm:mb-2 lg:mb-4">寵物寄宿</h2>
+          <p class="text-lg font-medium sm:text-xl">給您的毛孩最舒適的環境</p>
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@
           </select>
           <datePicker v-model="range" is-range>
             <template v-slot="{ inputValue, inputEvents }">
-              <div class="row items-center mt-2 sm:mt-0 sm:flex-nowrap sm:mx-0 sm:space-x-2">
+              <div class="row items-center mt-2 md:mt-0 sm:flex-nowrap sm:mx-0 sm:space-x-2">
                 <div class="col-6 sm:px-0 sm:w-160">
                   <input
                   :value="inputValue.start"
