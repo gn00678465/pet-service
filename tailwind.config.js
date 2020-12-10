@@ -83,6 +83,7 @@ module.exports = {
       28: "112px",
       30: "120px",
       31: "124px",
+      32: "128px",
     },
     container: {
       center: true,

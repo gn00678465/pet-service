@@ -35,6 +35,8 @@ const routes = [
           {
             path: '',
             components: {
+              lodgeHeader: () => import(/* webpackChunkName: "lodge" */ '../views/lodge/LodgeHeader.vue'),
+              service: () => import(/* webpackChunkName: "lodge" */ '../views/lodge/Service.vue'),
               popular,
             },
           },
