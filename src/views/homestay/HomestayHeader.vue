@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="container mb-15">
+    <div class="container">
       <div class="row sm:py-15">
         <div class="col-12 order-1 lodge-header-height
           sm:col-7 sm:order-2 lg:col-8">
@@ -15,7 +15,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-light border border-light py-4">
+    <div class="bg-light border border-light py-4 mb-15 lg:mb-20">
       <div class="container">
         <div class="flex items-center flex-wrap">
           <select name="species" id="species" class="custom-select w-65 mr-2 py-2"
