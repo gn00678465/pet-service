@@ -4,6 +4,7 @@ import home from '../views/Home.vue';
 import indexPage from '../views/index/Index.vue';
 import popular from '../components/Popular.vue';
 import lodgePage from '../views/lodge/Lodge.vue';
+import detialPage from '../views/detial/Detial.vue';
 
 Vue.use(VueRouter);
 
@@ -38,6 +39,19 @@ const routes = [
               lodgeHeader: () => import(/* webpackChunkName: "lodge" */ '../views/lodge/LodgeHeader.vue'),
               service: () => import(/* webpackChunkName: "lodge" */ '../views/lodge/Service.vue'),
               popular,
+            },
+          },
+        ],
+      },
+      {
+        path: 'lodge/:id',
+        component: detialPage,
+        children: [
+          {
+            path: '',
+            components: {
+              detial_img: () => import(/* webpackChunkName: "detial" */ '../views/detial/Detial_img.vue'),
+              service: () => import(/* webpackChunkName: "lodge" */ '../views/lodge/Service.vue'),
             },
           },
         ],
