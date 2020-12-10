@@ -7,7 +7,7 @@
         <div class="card flex-row border-2 border-gray-200">
           <div class="card__header py-7 px-4">
             <img :src="comment.imgUrl" alt=""></div>
-          <div class="card__body flex flex-col justify-between py-3">
+          <div class="card__body flex flex-col justify-between pl-1">
             <p class="aligns-middle">{{ comment.name }}
               <span class="ml-2 font-roboto text-gray-500 text-sm">Oct 17 2020</span>
             </p>
