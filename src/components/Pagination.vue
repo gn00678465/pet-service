@@ -7,7 +7,7 @@
     </li>
     <li v-for="num of totalPage" :key="num" class="page__item">
       <button type="button" class="page__link" :data-page="num"
-        :class="{'page__link-active': num === currentPage}"
+        :class="{'page__link--active': num === currentPage}"
         @click.prevent="emitPage(num)">
         {{ num }}
       </button>
