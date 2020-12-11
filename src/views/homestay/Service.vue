@@ -2,9 +2,9 @@
   <div class="container pb-15 lg:pb-20">
     <ul class="row -mb-3 sm:-mb-5 md:-mb-8">
       <li class="col-6 mb-3 sm:col-4 sm:mb-5 lg:col-3 md:mb-8"
-        v-for="item of homestayListsArr" :key="item.name">
+        v-for="item of homestayLists" :key="item.name">
         <card
-        :path="`homestay/${item.id}`"
+        :path="`/homestay/${item.id}`"
         :name="item.name"
         :imgUrl="item.image"
         :rating="item.rating"
@@ -51,17 +51,6 @@ export default {
         arr.push(data.homestayLists[key]);
       });
       this.homestayLists = arr;
-    },
-  },
-  computed: {
-    homestayListsArr() {
-      const arr = [];
-      this.homestayLists.forEach((item) => {
-        const newItem = item;
-        delete newItem.detial;
-        arr.push(newItem);
-      });
-      return arr;
     },
   },
 };

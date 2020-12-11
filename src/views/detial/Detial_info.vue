@@ -1,8 +1,8 @@
 <template>
   <div class="text-primary font-medium">
-    <h2 class="h3 mb-4">毛孩好家
+    <h2 class="h3 mb-4">{{ name }}
       <span class="ml-4">
-        <template v-for="num in 5">
+        <template v-for="num in rating">
           <span class="material-icons text-lg text-light mr-1.5" :key="num">star</span>
         </template>
       </span>
@@ -20,13 +20,40 @@
     <div class="flex mb-7">
       <span class="material-icons text-orange-400 mr-3">location_on</span>
       <div class="block">
-        <p>高雄市鹽埕區七賢三路123號</p>
-        <p>服務區域：高雄市 全區</p>
+        <p>{{ address }}</p>
+        <p>服務區域：{{ area }} 全區</p>
       </div>
     </div>
-    <div class="row text-lg mb-15">
-      <div class="col-6"><button class="btn btn-primary py-2 w-full">聯繫</button></div>
-      <div class="col-6"><button class="btn btn-primary py-2 w-full">立刻預約</button></div>
+    <div class="row text-lg">
+      <div class="col-6 sm:col-4 lg:col-4">
+        <button class="btn btn-outline-primary py-2 w-full">聯繫</button>
+      </div>
+      <div class="col-6 sm:col-4 lg:col-6">
+        <button class="btn btn-primary py-2 w-full">立刻預約</button>
+      </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    name: {
+      type: String,
+      required: true,
+    },
+    rating: {
+      type: Number,
+      required: true,
+    },
+    address: {
+      type: String,
+      required: true,
+    },
+    area: {
+      type: String,
+      required: true,
+    },
+  },
+};
+</script>

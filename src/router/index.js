@@ -45,19 +45,12 @@ const routes = [
       },
       {
         path: 'homestay/:id',
-        component: detialPage,
-        children: [
-          {
-            path: '',
-            components: {
-              detial_img: () => import(/* webpackChunkName: "detial" */ '../views/detial/Detial_img.vue'),
-              detial_info: () => import(/* webpackChunkName: "detial" */ '../views/detial/Detial_info.vue'),
-              detial_about: () => import(/* webpackChunkName: "detial" */ '../views/detial/Detial_about.vue'),
-              service: () => import(/* webpackChunkName: "homestay" */ '../views/homestay/Service.vue'),
-              comment: () => import(/* webpackChunkName: "detial" */ '../views/detial/Comment.vue'),
-            },
-          },
-        ],
+        components: {
+          default: detialPage,
+        },
+        props: {
+          default: true,
+        },
       },
     ],
   },
@@ -65,6 +58,9 @@ const routes = [
 
 const router = new VueRouter({
   routes,
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  },
 });
 
 export default router;

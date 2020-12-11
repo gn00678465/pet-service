@@ -34,4 +34,10 @@
   .img-fluid {
     @apply max-w-full h-auto;
   }
+  .fade-enter-active, .fade-leave-active {
+    @apply transition-opacity duration-500;
+  }
+  .fade-enter, .fade-leave-to {
+    @apply opacity-0;
+  }
 }
