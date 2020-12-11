@@ -34,7 +34,7 @@
       "service": ["寄宿", "美容洗澡", "到府保姆"],
       "detial": {
         "images": [
-          "images/homestay-3.jpeg",
+          "./images/homestay-2.jpeg",
           "images/index-5.jpeg",
           "images/detail-1.jpeg",
           "images/detail2.jpeg"
@@ -200,7 +200,7 @@
       "service": ["寄宿", "美容洗澡"],
       "detial": {
         "images": [
-          "images/homestay-3.jpeg",
+          "images/homestay-4.jpeg",
           "images/index-5.jpeg",
           "images/detail-1.jpeg",
           "images/detail2.jpeg"
@@ -278,7 +278,7 @@
       "service": ["寄宿", "美容洗澡", "到府保姆"],
       "detial": {
         "images": [
-          "images/homestay-3.jpeg",
+          "images/homestay-5.jpeg",
           "images/index-5.jpeg",
           "images/detail-1.jpeg",
           "images/detail2.jpeg"
@@ -361,7 +361,7 @@
       "service": ["寄宿", "美容洗澡", "到府保姆", "寵物行為訓練"],
       "detial": {
         "images": [
-          "images/homestay-3.jpeg",
+          "images/homestay-6.jpeg",
           "images/index-5.jpeg",
           "images/detail-1.jpeg",
           "images/detail2.jpeg"
@@ -449,7 +449,7 @@
       "service": ["寄宿", "寵物行為訓練"],
       "detial": {
         "images": [
-          "images/homestay-3.jpeg",
+          "images/homestay-7.jpeg",
           "images/index-5.jpeg",
           "images/detail-1.jpeg",
           "images/detail2.jpeg"
@@ -527,7 +527,7 @@
       "service": ["寄宿", "美容洗澡", "到府保姆"],
       "detial": {
         "images": [
-          "images/homestay-3.jpeg",
+          "images/index-2.jpeg",
           "images/index-5.jpeg",
           "images/detail-1.jpeg",
           "images/detail2.jpeg"
@@ -610,7 +610,7 @@
       "service": ["寄宿", "到府保姆"],
       "detial": {
         "images": [
-          "images/homestay-3.jpeg",
+          "images/homestay-8.jpeg",
           "images/index-5.jpeg",
           "images/detail-1.jpeg",
           "images/detail2.jpeg"
