@@ -62,7 +62,7 @@ export default {
           links: [
             {
               link: '寵物寄宿',
-              path: 'homestay',
+              path: '/homestay',
             },
             {
               link: '寵物到府保姆',
