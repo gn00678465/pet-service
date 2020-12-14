@@ -42,6 +42,7 @@ module.exports = {
         300: '#00000029',
         400: '#CED4DA',
         500: '#6C757D',
+        600: '#888',
       },
       'dark': {
         600: '#818A91',
@@ -106,6 +107,8 @@ module.exports = {
     extend: {
       backgroundColor: ['active'],
       opacity: ['disabled'],
+      borderColor: ['checked'],
+      textColor: ['checked'],
     },
   },
   plugins: [],

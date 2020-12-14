@@ -1,7 +1,7 @@
 <template>
   <div class="text-primary font-medium">
     <h2 class="h3 mb-4">{{ name }}
-      <span class="ml-4">
+      <span class="ml-2">
         <template v-for="num in rating">
           <span class="material-icons text-lg text-light mr-1.5" :key="num">star</span>
         </template>
@@ -29,7 +29,8 @@
         <button class="btn btn-outline-primary py-2 w-full">聯繫</button>
       </div>
       <div class="col-6 sm:col-4 lg:col-6">
-        <button class="btn btn-primary py-2 w-full">立刻預約</button>
+        <button class="btn btn-primary py-2 w-full"
+          @click.prevent="$emit('order-now')">立刻預約</button>
       </div>
     </div>
   </div>

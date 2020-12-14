@@ -12,6 +12,7 @@
           :rating="homestayInfo.rating"
           :address="homestayInfo.detial.address"
           :area="homestayInfo.detial.service_area"
+          @order-now="showModal = true"
         />
       </div>
       <div class="order-3 col-12 lg:col-6 lg:offset-6
@@ -50,12 +51,27 @@
         </div>
       </div>
     </div>
+    <modal :visible.sync="showModal" ref="modal">
+      <template #modal-body>
+        <transition name="fade" mode="out-in">
+          <template v-if="!isFinish">
+            <orderInput  :visible.sync="showModal" :info="homestayInfo"
+              @finish="isFinish = true"/>
+          </template>
+          <template v-else>
+            <final :visible.sync="showModal" />
+          </template>
+        </transition>
+      </template>
+    </modal>
   </div>
 </template>
 
 <script>
 import data from '@/assets/data.json';
 import card from '@/components/Card.vue';
+import orderInput from '@/components/forms/OrderInput.vue';
+import final from '@/components/forms/Final.vue';
 import detialImg from './Detial_img.vue';
 import detialInfo from './Detial_info.vue';
 import detialAbout from './Detial_about.vue';
@@ -70,6 +86,8 @@ export default {
   data: () => ({
     homestayInfo: {},
     newHomestayArr: [],
+    showModal: false,
+    isFinish: false,
   }),
   components: {
     detialImg,
@@ -77,9 +95,13 @@ export default {
     detialAbout,
     comments,
     card,
+    orderInput,
+    final,
+  },
+  created() {
+    this.homestayInfo = data.homestayLists[this.id];
   },
   mounted() {
-    this.homestayInfo = data.homestayLists[this.id];
     this.filterHomestayList();
   },
   methods: {
@@ -97,6 +119,13 @@ export default {
       this.homestayInfo = data.homestayLists[this.id];
       this.filterHomestayList();
     },
+  },
+  beforeRouteLeave(to, from, next) {
+    if (to.path !== from.path) {
+      this.$refs.modal.hiddenScrollBar(this.visible);
+      next();
+    }
+    next(false);
   },
 };
 </script>

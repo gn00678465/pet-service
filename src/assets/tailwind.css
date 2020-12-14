@@ -5,6 +5,7 @@
 @import './style/fonts.css';
 @import './style/base.css';
 @import './style/grid.css';
+@import './style/transition.css';
 
 @import './style/components/components.css';
 
