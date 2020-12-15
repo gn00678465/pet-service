@@ -1,10 +1,13 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+// import store from '@/assets/store';
 import home from '../views/Home.vue';
 import indexPage from '../views/index/Index.vue';
 import popular from '../components/Popular.vue';
 import homestayPage from '../views/homestay/Homestay.vue';
 import detialPage from '../views/detial/Detial.vue';
+import loinPage from '../views/member/Login.vue';
+import member from '../views/member/Member.vue';
 
 Vue.use(VueRouter);
 
@@ -53,6 +56,22 @@ const routes = [
         },
       },
     ],
+  },
+  {
+    path: '/login',
+    component: loinPage,
+  },
+  {
+    path: '/member',
+    component: member,
+    // beforeEnter(to, from, next) {
+    //   console.log(to, from);
+    //   console.log(store.auth);
+    //   if (store.auth) {
+    //     next();
+    //   }
+    //   next('/login');
+    // },
   },
 ];
 

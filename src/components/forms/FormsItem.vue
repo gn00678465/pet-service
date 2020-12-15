@@ -122,7 +122,7 @@ export default {
 }
 input.hidden:checked {
   + .card {
-    @apply border-orange-400;
+    @apply border-orange-400 !important;
     span {
       @apply text-light;
     }
