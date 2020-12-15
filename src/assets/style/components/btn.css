@@ -6,6 +6,6 @@
     @apply bg-orange-400 border-orange-500 hover:bg-primary active:bg-primary hover:border-primary text-white;
   }
   .btn-outline-primary {
-    @apply border-orange-500 bg-white hover:bg-orange-400 hover:text-white active:bg-gray-400 text-orange-400;
+    @apply border-orange-500 bg-white hover:bg-orange-400 hover:text-white text-orange-400;
   }
 }
