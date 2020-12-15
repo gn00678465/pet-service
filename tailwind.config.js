@@ -110,6 +110,7 @@ module.exports = {
       opacity: ['disabled'],
       borderColor: ['checked'],
       textColor: ['checked'],
+      fontWeight: ['hover'],
     },
   },
   plugins: [],

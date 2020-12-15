@@ -6,7 +6,7 @@
         <detialImg :imgArr="homestayInfo.detial.images" :key="id"/>
       </div>
       <div class="order-2 col-12 sm:col-7 sm:order-1 lg:col-6
-      mb-10 sm:mb-15 lg:sticky top-7">
+      mb-10 sm:mb-15 lg:sticky lg:top-20">
         <detialInfo
           :name="homestayInfo.name"
           :rating="homestayInfo.rating"

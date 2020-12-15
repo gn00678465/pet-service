@@ -1,5 +1,8 @@
 <template>
-  <div class="text-primary font-medium">
+  <div class="text-primary font-medium"
+    data-aos="fade-right"
+    data-aos-duration="300"
+  >
     <h2 class="h3 mb-4">{{ name }}
       <span class="ml-2">
         <template v-for="num in rating">

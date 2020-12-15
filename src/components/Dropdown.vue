@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="relative inline-block text-left">
+  <div class="block text-center">
+    <div class="relative inline-block">
       <div>
         <slot name="button">
           <button type="button" class="navbar__link text-lg sm:text-base"
@@ -18,7 +18,7 @@
         leave-to-class="transform opacity-0 scale-95"
       >
         <div v-show="isOpen" class="origin-top-right absolute right-0 mt-2 w-48
-          bg-white border border-gray-300 z-40">
+          bg-white border border-gray-300 text-left z-50">
           <div class="py-2">
             <a href="#" class="block px-5 py-1 text-primary
               hover:bg-gray-100 hover:text-gray-900">會員資料</a>

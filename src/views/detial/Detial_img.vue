@@ -1,5 +1,8 @@
 <template>
-  <ul class="grid grid-cols-4 gap-1.5 sm:gap-2 lg:grid-cols-5">
+  <ul class="grid grid-cols-4 gap-1.5 sm:gap-2 lg:grid-cols-5"
+    data-aos="fade-left"
+    data-aos-duration="300"
+  >
     <li class="row-span-4 col-span-4 lg:row-span-5 lg:col-span-5">
       <transition name="fade" mode="out-in">
         <img :src="imgArr[initialImg]" alt="" :key="imgArr[initialImg]"

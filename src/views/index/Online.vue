@@ -3,7 +3,12 @@
     <h2 class="h3 mb-1">線上預約</h2>
     <p class="text-lg font-medium mb-3">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
     <ul class="grid sm:grid-flow-col sm:grid-row-2 sm:grid-cols-custom gap-1 sm:gap-1.5 text-white">
-      <li v-for="(item) of lists" :key="item.title" :class="{'row-span-2': item.rowSpan}">
+      <li v-for="(item, index) of lists" :key="item.title" :class="{'row-span-2': item.rowSpan}"
+        :data-aos="index % 2 === 0 ? 'flip-left': 'flip-right'"
+        data-aos-offset="50"
+        data-aos-duration="400"
+        :data-aos-delay="index * 150"
+        >
         <router-link :to="item.path" class="card">
           <div class="rounded w-full bg-cover bg-no-repeat bg-center"
           :class="item.classes"

@@ -2,7 +2,12 @@
   <div class="container pb-15 lg:pb-20">
     <ul class="row -mb-3 sm:-mb-5 md:-mb-8">
       <li class="col-6 mb-3 sm:col-4 sm:mb-5 lg:col-3 md:mb-8"
-        v-for="item of homestayLists" :key="item.name">
+        v-for="(item, index) of homestayLists" :key="item.name"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-duration="300"
+        :data-aos-delay="index * 100"
+        >
         <card
         :path="`/homestay/${item.id}`"
         :name="item.name"

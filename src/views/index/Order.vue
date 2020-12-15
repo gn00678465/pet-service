@@ -4,7 +4,12 @@
     <p class="mb-3 sm:mb-5 text-lg">輕鬆三步驟，立即獲取最佳服務！</p>
     <ul class="row text-lg -mb-8 sm:-mb-0">
       <li class="col-12 sm:col-4 mb-8 sm:mb-0"
-        v-for="(flow, index) of orderFlow" :key="flow.title">
+        v-for="(flow, index) of orderFlow" :key="flow.title"
+        :data-aos="index % 2 === 0 ? 'flip-left': 'flip-right'"
+        data-aos-offset="200"
+        data-aos-duration="600"
+        :data-aos-delay="index * 200"
+        >
         <p class="mb-1">{{ index + 1 }}.{{ flow.title }}</p>
         <img :src="flow.imgUrl" alt="">
       </li>

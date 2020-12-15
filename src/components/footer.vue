@@ -8,22 +8,24 @@
         </li>
         <template v-for="link of items.links" >
           <li :key="link.link">
-            <router-link class="inline-block py-3" :to="link.path">{{ link.link }}</router-link>
+            <router-link class="inline-block py-3
+              hover:font-bold transition-all" :to="link.path">{{ link.link }}</router-link>
           </li>
         </template>
       </ul>
       <ul>
         <li>
           <h4 class="h6 mb-9">聯繫我們</h4>
-          <a href="mailto:petpet@petmail.com" class="inline-block py-3">petpet@petmail.com</a>
+          <a href="mailto:petpet@petmail.com" class="inline-block py-3
+            hover:font-bold transition-all">petpet@petmail.com</a>
         </li>
       </ul>
     </div>
     <div class="flex justify-end md:justify-between items-center">
-      <p class="hidden md:inline-block text-lg font-medium">
+      <a href="tel:07-123-4567" class="hidden md:inline-block text-lg font-medium">
         <span class="material-icons align-middle">phone</span>
-      07-123-4567
-      </p>
+        07-123-4567
+      </a>
       <p class="text-sm">Copyright © 2020 PetPet. All rights reserved.</p>
     </div>
   </footer>
