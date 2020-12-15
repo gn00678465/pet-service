@@ -18,7 +18,7 @@
         leave-to-class="transform opacity-0 scale-95"
       >
         <div v-show="isOpen" class="origin-top-right absolute right-0 mt-2 w-48
-          bg-white border border-gray-300 z-50">
+          bg-white border border-gray-300 z-40">
           <div class="py-2">
             <a href="#" class="block px-5 py-1 text-primary
               hover:bg-gray-100 hover:text-gray-900">會員資料</a>
