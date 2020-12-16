@@ -3,7 +3,7 @@
   >
     <div class="modal" v-show="visible" v-esc-modal="closeModal" ref="modal"
       :class="{'modal--active': visible}">
-      <div class="modal__dialog modal__dialog__center" @click.self="closeModal(true)">
+      <div class="modal__dialog modal__dialog__center expand-navbar" @click.self="closeModal(true)">
         <div class="modal__content lg:modal__content__lg">
           <slot name="modal-header"></slot>
           <slot name="modal-body"></slot>
