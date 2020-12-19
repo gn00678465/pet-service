@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './style/reset.css';
 @import './style/fonts.css';
 @import './style/base.css';
 @import './style/grid.css';
-@import './style/transition.css';
 
 @import './style/components/components.css';
 
-@import './style/utilities/text.css';
+@import './style/utilities/transition.css';
