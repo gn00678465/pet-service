@@ -46,7 +46,7 @@
 
 <style scoped>
 .h-custom {
-  height: calc(100vh - var(--navbar-height));
+  height: calc(100vh - 65px);
 }
 .member-photo {
   width: 75px;
