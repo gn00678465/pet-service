@@ -36,19 +36,18 @@
         <h3 class="h4 mb-6 text-primary">其他
           <a href="#" class="text-orange-400" @click.prevent> 高雄市 </a>
           <a href="#" class="text-orange-400" @click.prevent> 寄宿 </a> 的 寵物保姆</h3>
-        <div class="grid grid-cols-2 grid-rows-2 gap-custom
+        <ul class="grid grid-cols-2 grid-rows-2 gap-custom
           sm:grid-cols-3 sm:grid-rows-3">
-          <template v-for="item of newHomestayArr" class="">
+          <li v-for="item of newHomestayArr" class="" :key="item.name">
             <card
-              :key="item.name"
               :path="`/homestay/${item.id}`"
               :name="item.name"
               :imgUrl="item.image"
               :rating="item.rating"
               :service="item.service"
             />
-          </template>
-        </div>
+          </li>
+        </ul>
       </div>
     </div>
     <modal :visible.sync="showModal" ref="modal">
