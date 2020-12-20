@@ -59,6 +59,8 @@ module.exports = {
       'black': '#000',
       'primary': '#772400',
       'light': '#F0AD25',
+      'success': '#28a745',
+      'danger': '#dc3545',
       'border': {
         'light': '#F6A436',
       },
@@ -114,6 +116,9 @@ module.exports = {
       borderColor: ['checked'],
       textColor: ['checked'],
       fontWeight: ['hover'],
+      ringWidth: ['active'],
+      ringColor: ['active'],
+      ringOpacity: ['active'],
     },
   },
   plugins: [],
