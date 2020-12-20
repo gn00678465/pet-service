@@ -12,7 +12,7 @@
       @compositionend="inputting = false"
       @change="emitHandler"
     >
-    <span>{{ errors[0] }}</span>
+    <span class="text-danger mt-1">{{ errors[0] }}</span>
   </ValidationProvider>
 </template>
 

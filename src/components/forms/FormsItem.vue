@@ -64,7 +64,7 @@
           <option value="dog">狗</option>
           <option value="cat">貓</option>
         </select>
-        <span>{{ errors[0] }}</span>
+        <span class="text-danger mt-1">{{ errors[0] }}</span>
         </ValidationProvider>
       <selectComponent class="w-20 sm:w-32"
         label="年齡"
