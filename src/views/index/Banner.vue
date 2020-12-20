@@ -44,6 +44,6 @@ export default {
 <style scoped>
 .banner {
   @apply bg-center bg-no-repeat bg-cover;
-  background-image: url('../../assets/images/index-9.jpeg');
+  background-image: url('../../../public/images/index-9.jpeg');
 }
 </style>

@@ -79,7 +79,7 @@ export default {
 
 <style scoped>
 .lodge-header-img {
-  background-image: url('./../../assets/images/homestay-1.png');
+  background-image: url('./../../../public/images/homestay-1.png');
 }
 .lodge-header-height {
   height: 352px;

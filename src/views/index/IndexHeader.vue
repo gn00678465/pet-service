@@ -2,7 +2,7 @@
   <header class="w-full relative pb-15 sm:pb-26 md:pb-20">
     <div class="w-full py-0 sm:text-center sm:pt-26
       lg:text-left lg:pt-0">
-      <img src="./../../assets/images/index-1.png"
+      <img src="./../../../public/images/index-1.png"
         class="header-bg-img object-cover object-center inline-block" alt="">
     </div>
     <div class="container pt-3 sm:pt-6 lg:py-0 relative
