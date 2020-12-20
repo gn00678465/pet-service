@@ -23,6 +23,22 @@
       "skills": ["寄宿", "美容", "寵物行為訓練"],
       "evaluate": 52,
       "finished": 196
+    },
+    {
+      "imgUrl": "./images/index-2.jpeg",
+      "name": "John",
+      "photo": "./images/person-1.png",
+      "skills": ["寄宿", "美容", "寵物行為訓練"],
+      "evaluate": 198,
+      "finished": 580
+    },
+    {
+      "imgUrl": "./images/index-4.jpeg",
+      "name": "Keanu",
+      "photo": "./images/person-3.png",
+      "skills": ["寄宿", "美容", "寵物行為訓練"],
+      "evaluate": 52,
+      "finished": 196
     }
   ],
   "homestayLists": {
