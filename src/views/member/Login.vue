@@ -4,7 +4,7 @@
     <header class="w-full relative sm:pt-31 lg:pt-0">
       <div class="w-full py-0 sm:text-center sm:pt-26 hidden lg:block
         lg:text-left lg:pt-0">
-        <img src="./../../assets/images/index-1.png"
+        <img src="./../../../public/images/index-1.png"
           class="header-bg-img object-cover object-center inline-block" alt="">
       </div>
       <div class="w-full relative
@@ -30,13 +30,13 @@
                 <button class="btn w-full flex-grow border-gray-400 py-1 mb-3 lg:mb-0 lg:w-auto"
                   @click.prevent>
                   <p class="font-roboto text-gray-500 align-middle">
-                    <img src="../../assets/images/facebook.svg" alt="" class="inline-block">
+                    <img src="../../../public/images/facebook.svg" alt="" class="inline-block">
                     Facebook</p>
                 </button>
                 <button class="btn w-full flex-grow border-gray-400 py-1 lg:w-auto"
                   @click.prevent>
                   <p class="font-roboto text-gray-500 align-middle">
-                    <img src="../../assets/images/google.svg" alt="" class="inline-block">
+                    <img src="../../../public/images/google.svg" alt="" class="inline-block">
                     Google</p>
                 </button>
               </div>

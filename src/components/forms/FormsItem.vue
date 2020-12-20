@@ -1,26 +1,31 @@
 <template>
   <div>
-    <!-- radio -->
-    <div class="flex justify-between mb-6">
-      <template v-for="(radio) of radios">
-        <input type="radio" :id="radio.val" class="hidden" :key="`${radio.val}-input`"
-          name="select" :value="radio.val" @change="$emit('update:item', $event.target.value)">
-        <label :for="radio.val" class="bg-white shadow card text-gray-600 border-2
-          border-transparent p-1 cursor-pointer" :key="radio.val">
+    <!-- checkbox -->
+    <ValidationProvider class="flex justify-between mb-6 flex-wrap" tag="div"
+      rules="required|min:1" v-slot="{ errors }">
+      <template v-for="(checkbox) of checkboxes">
+        <input type="checkbox" :id="checkbox.val" class="hidden" :key="`${checkbox.val}-input`"
+          name="select" :value="checkbox.val" v-model="item">
+        <label :for="checkbox.val" class="bg-white shadow card text-gray-600 border-2
+          border-transparent p-1 cursor-pointer" :key="checkbox.val">
           <div class="flex flex-col items-center justify-center absolute inset-0">
-            <span class="material-icons mb-1 sm:mb-2 sm:text-4xl">{{ radio.icon  }}</span>
-            <p class="sm:text-lg">{{ radio.key }}</p>
+            <span class="material-icons mb-1 sm:mb-2 sm:text-4xl">{{ checkbox.icon  }}</span>
+            <p class="sm:text-lg">{{ checkbox.key }}</p>
           </div>
           </label>
       </template>
-    </div>
+      <p class="w-full text-danger">{{ errors[0] }}</p>
+    </ValidationProvider>
     <!-- time -->
-    <datePicker :value="$attrs.range" v-on="$listeners" is-range>
+    <datePicker :value="$attrs.range" v-on="$listeners" is-range :input-debounce="1000"
+      :min-date='new Date()'
+    >
       <template v-slot="{ inputValue, inputEvents }">
-        <p class="text-dark-900 mb-1">選擇日期</p>
+        <label for="selectDate" class="text-dark-900 mb-1">選擇日期</label>
         <div class="flex flex-wrap mb-5 sm:flex-nowrap">
           <div class="flex items-center mb-2 sm:mb-0">
             <input
+              id="selectDate"
               :value="inputValue.start"
               v-on="inputEvents.start"
               class="form-control py-2 pl-4 flex-1"
@@ -38,46 +43,52 @@
         </div>
       </template>
     </datePicker>
+    <!-- select -->
     <div class="flex justify-between mb-10 sm:mb-20 sm:justify-start">
-      <div class="form-group w-20 sm:mr-6">
-        <label for="" class="text-dark-900">毛孩數量</label>
-        <select name="" id="" class="custom-select py-2 px-4"
-          :value="$attrs.count" @change="$emit('update:count', $event.target.value * 1)">
-          <option :value="num" v-for="num of 10" :key="num">
-            {{ num }}隻
-          </option>
-        </select>
-      </div>
-      <div class="form-group w-20 sm:w-30 sm:mr-8">
-        <label for="" class="text-dark-900">您的毛孩是</label>
-        <select name="" id="" class="custom-select py-2 px-4"
-          :value="$attrs.species" @change="$emit('update:species', $event.target.value)">
+      <selectComponent class="w-20 sm:mr-6"
+        label="毛孩數量"
+        id="count"
+        rules="required|is_not:''"
+        :options="5"
+        v-on="$listeners"
+      />
+      <ValidationProvider tag="div" class="form-group w-20 sm:w-30 sm:mr-8"
+        rules="required|is_not:''" v-slot="{ errors, classes }">
+        <label for="species">您的毛孩是</label>
+        <select class="custom-select py-2 px-4"
+          name="species" id="species"
+          :class="classes"
+          :value="$attrs.species" @change="$emit('update:species', $event.target.value)"
+        >
+          <option value="" disabled>請選擇..</option>
           <option value="dog">狗</option>
           <option value="cat">貓</option>
         </select>
-      </div>
-      <div class="form-group w-20 sm:w-32">
-        <label for="" class="text-dark-900">年齡</label>
-        <select name="" id="" class="custom-select py-2 px-4"
-          :value="$attrs.petAge" @change="$emit('update:petAge', $event.target.value * 1)">
-          <option :value="num" v-for="num of 15" :key="num">
-            {{ num }}歲
-          </option>
-        </select>
-      </div>
+        <span class="text-danger mt-1">{{ errors[0] }}</span>
+        </ValidationProvider>
+      <selectComponent class="w-20 sm:w-32"
+        label="年齡"
+        id="petAge"
+        unit="歲"
+        rules="required|is_not:''"
+        :options="10"
+        v-on="$listeners"
+      />
     </div>
   </div>
 </template>
 
 <script>
 import datePicker from 'v-calendar/lib/components/date-picker.umd';
+import selectComponent from '../Select.vue';
 
 export default {
   components: {
     datePicker,
+    selectComponent,
   },
   props: {
-    radios: {
+    checkboxes: {
       type: Array,
       default: () => [
         {
@@ -104,8 +115,13 @@ export default {
     },
   },
   data: () => ({
-    range: {},
+    item: [],
   }),
+  watch: {
+    item() {
+      this.$emit('update:item', this.item);
+    },
+  },
 };
 </script>
 

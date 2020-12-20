@@ -1,12 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+@import "tailwindcss/base";
+@import './style/reset.css';
 @import './style/fonts.css';
 @import './style/base.css';
 @import './style/grid.css';
-@import './style/transition.css';
 
+@import "tailwindcss/components";
 @import './style/components/components.css';
 
-@import './style/utilities/text.css';
+@import "tailwindcss/utilities";
+@import './style/utilities/transition.css';

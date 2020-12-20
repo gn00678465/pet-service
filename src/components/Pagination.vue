@@ -41,5 +41,30 @@ export default {
 </script>
 
 <style scoped>
-
+.pagination {
+  @apply flex rounded;
+  .page {
+    &__item {
+      @apply border border-gray-200;
+      &:first-child {
+        @apply rounded-l;
+      }
+      &:last-child {
+        @apply rounded-r;
+      }
+      &:not(:last-child) {
+        @apply border-r-0;
+      }
+    }
+    &__link {
+      @apply inline-block px-4 py-2;
+    }
+    &__link:not(.page__link--active) {
+      @apply text-primary hover:bg-gray-200;
+    }
+    &__link--active {
+      @apply bg-primary text-white cursor-auto;
+    }
+  }
+}
 </style>

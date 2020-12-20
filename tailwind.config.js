@@ -1,5 +1,8 @@
 module.exports = {
-  // purge: { content: ['./public/**/*.html', './src/**/*.vue'] },
+  purge: {
+    layers: ['base', 'components', 'utilities'],
+    content: ['./public/**/*.html', './src/**/*.vue'],
+  },
   darkMode: false, // or 'media' or 'class'
   important: true, // !important
   theme: {
@@ -56,6 +59,8 @@ module.exports = {
       'black': '#000',
       'primary': '#772400',
       'light': '#F0AD25',
+      'success': '#28a745',
+      'danger': '#dc3545',
       'border': {
         'light': '#F6A436',
       },
@@ -111,6 +116,9 @@ module.exports = {
       borderColor: ['checked'],
       textColor: ['checked'],
       fontWeight: ['hover'],
+      ringWidth: ['active'],
+      ringColor: ['active'],
+      ringOpacity: ['active'],
     },
   },
   plugins: [],

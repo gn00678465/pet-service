@@ -8,7 +8,7 @@
       <div class="col-12 mb-15 sm:col-6 sm:mb-0 lg:col-5 lg:offset-1">
         <div class="card">
           <div class="card__header">
-            <img src="../../assets/images/person-5.png" alt=""
+            <img src="../../../public/images/person-5.png" alt=""
             class="mr-4 member-photo inline-block">
             <p class="text-lg font-medium inline-block">Joanne</p>
           </div>
@@ -46,7 +46,7 @@
 
 <style scoped>
 .h-custom {
-  height: calc(100vh - var(--navbar-height));
+  height: calc(100vh - 65px);
 }
 .member-photo {
   width: 75px;
