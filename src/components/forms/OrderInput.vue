@@ -38,14 +38,17 @@
         <button class="py-2 mb-1 btn text-orange-400 w-full sm:w-auto sm:mr-4 sm:mb-0
           lg:w-full lg:mb-1 lg:mr-0 visible"
           @click="prevHandler">返回</button>
-        <button class="py-2 btn btn-primary w-full sm:w-1/2 lg:w-full" @click="nextHandler">
-        下一步</button>
+        <button class="py-2 btn btn-primary w-full sm:w-1/2 lg:w-full"
+          :type="current === 3 ? 'submit' : 'button'"
+          @click="nextHandler" @submit.prevent>
+        {{ current === 3 ? '送出預約' : '下一步' }}</button>
       </portal>
     </div>
   </div>
 </template>
 
 <script>
+// import { ValidationObserver } from 'vee-validate';
 import steps from './Steps.vue';
 
 export default {
@@ -64,9 +67,12 @@ export default {
     portal: true,
     windowWidth: window.innerWidth,
     orderData: {
-      item: '',
+      item: [],
       count: 1,
-      range: {},
+      range: {
+        start: new Date(),
+        end: new Date(),
+      },
       species: '',
       petAge: 1,
       petName: '',
@@ -84,8 +90,6 @@ export default {
     nextHandler() {
       if (this.current < 3) {
         this.current += 1;
-      } else {
-        this.$emit('finish');
       }
     },
     prevHandler() {
