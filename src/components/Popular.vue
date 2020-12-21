@@ -37,13 +37,13 @@
           </div>
         </template>
       </swiper>
-      <button type="button" class="hidden sm:block btn p-0 absolute z-10 -left-5
+      <button type="button" class="hidden sm:block btn p-0 absolute z-xs -left-5
         text-orange-400 hover:text-primary
         transform top-1/2 -translate-y-1/2 rotate-90"
       @click="prevHandler()">
         <span class="material-icons text-5xl">arrow_drop_down_circle</span>
       </button>
-      <button type="button" class="hidden sm:block btn p-0 absolute z-10 -right-5
+      <button type="button" class="hidden sm:block btn p-0 absolute z-xs -right-5
         text-orange-400 hover:text-primary
         transform top-1/2 -translate-y-1/2 -rotate-90"
       @click="nextHandler()">

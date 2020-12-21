@@ -67,7 +67,7 @@ export default {
 .modal {
   @apply fixed inset-0 overflow-x-hidden overflow-y-auto bg-black bg-opacity-40;
   &__dialog {
-    @apply relative z-20 w-auto min-h-screen;
+    @apply relative z-s w-auto min-h-screen;
     @apply transition-all duration-500 transform translate-x-0 -translate-y-1/4 opacity-0;
     padding-left: 15px;
     padding-right: 15px;
@@ -76,7 +76,7 @@ export default {
     }
   }
   &__content {
-    @apply relative z-20 rounded bg-white mx-auto flex flex-col w-full;
+    @apply relative z-s rounded bg-white mx-auto flex flex-col w-full;
     max-width: 690px;
   }
   &__body, &__header, &__footer {
