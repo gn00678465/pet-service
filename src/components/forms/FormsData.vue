@@ -1,5 +1,5 @@
 <template>
-  <fieldset class="w-full sm:mb-10">
+  <ValidationObserver tag="form" class="w-full sm:mb-10">
     <inputComponent class="mb-5 sm:w-2/3"
       label="毛孩姓名"
       id="petName"
@@ -32,15 +32,17 @@
       rules="required|max:10"
       v-on="$listeners"
     />
-  </fieldset>
+  </ValidationObserver>
 </template>
 
 <script>
+import { ValidationObserver } from 'vee-validate';
 import inputComponent from '../Input.vue';
 
 export default {
   components: {
     inputComponent,
+    ValidationObserver,
   },
 };
 </script>

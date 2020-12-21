@@ -2,10 +2,8 @@
   <div class="relative">
     <div class="flex flex-wrap py-5 px-6 sm:px-15 sm:pt-15 sm:pb-12 lg:px-8 lg:w-2/3">
       <steps class="mb-3 flex-grow sm:order-1 sm:mb-9 lg:mb-0" :steps="steps" :current="current" />
-      <transition name="fade" mode="out-in">
-        <h3 class="h5 text-primary mb-3 flex-grow" :key="steps[current - 1]">
+      <h3 class="h5 text-primary mb-3 flex-grow" :key="steps[current - 1]">
         {{ steps[current - 1] }}</h3>
-      </transition>
       <div class="card flex-row mb-6 sm:mb-5 lg:absolute lg:flex-col lg:right-0 lg:top-0
         lg:w-1/3 lg:pt-15 lg:pb-12 lg:pr-8 lg:mb-0 lg:h-full">
         <img :src="info.image" alt=""
@@ -26,21 +24,23 @@
         </div>
       </div>
       <!-- component -->
-      <transition name="fade" mode="out-in">
-        <component :is="currentComponent"
-          v-model="orderData.range"
-          v-bind.sync="orderData"
-        />
-      </transition>
+        <transition name="fade" mode="out-in">
+          <component :is="currentComponent"
+            v-model="orderData.range"
+            v-bind.sync="orderData"
+            ref="form"
+          />
+        </transition>
       <!-- buttons -->
       <portal to="destination" :disabled="portal"
         class="flex-grow flex flex-wrap sm:justify-end sm:order-2">
         <button class="py-2 mb-1 btn text-orange-400 w-full sm:w-auto sm:mr-4 sm:mb-0
           lg:w-full lg:mb-1 lg:mr-0 visible"
+          type="button"
           @click="prevHandler">返回</button>
         <button class="py-2 btn btn-primary w-full sm:w-1/2 lg:w-full"
           :type="current === 3 ? 'submit' : 'button'"
-          @click="nextHandler" @submit.prevent>
+          @click="nextHandler">
         {{ current === 3 ? '送出預約' : '下一步' }}</button>
       </portal>
     </div>
@@ -48,12 +48,13 @@
 </template>
 
 <script>
-// import { ValidationObserver } from 'vee-validate';
+import { ValidationObserver } from 'vee-validate';
 import steps from './Steps.vue';
 
 export default {
   components: {
     steps,
+    ValidationObserver,
   },
   props: {
     info: {
@@ -88,9 +89,19 @@ export default {
   },
   methods: {
     nextHandler() {
-      if (this.current < 3) {
-        this.current += 1;
-      }
+      const validate = this.$refs.form.$children[0].validate();
+      validate.then((success) => {
+        if (success) {
+          // 證成功後的行為包含 AJAX傳送、重製表單等等
+          if (this.current < 3) {
+            this.current += 1;
+          } else if (this.current === 3) {
+            console.log('submit');
+            this.$emit('update:visible', false);
+            this.current = 1;
+          }
+        }
+      });
     },
     prevHandler() {
       if (this.current === 1) {
