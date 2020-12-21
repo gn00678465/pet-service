@@ -73,6 +73,10 @@ const routes = [
     //   next('/login');
     // },
   },
+  {
+    path: '*',
+    redirect: '/',
+  },
 ];
 
 const router = new VueRouter({
