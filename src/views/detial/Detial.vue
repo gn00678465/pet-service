@@ -126,6 +126,13 @@ export default {
     }
     next(false);
   },
+  beforeRouteUpdate(to, from, next) {
+    const toID = to.params.id;
+    const hasData = Object.prototype.hasOwnProperty.call(data.homestayLists, toID);
+    if (hasData) {
+      next();
+    } next(false);
+  },
 };
 </script>
 
