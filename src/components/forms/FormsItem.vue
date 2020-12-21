@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <ValidationObserver tag="form">
     <!-- checkbox -->
     <ValidationProvider class="flex justify-between mb-6 flex-wrap" tag="div"
       rules="required|min:1" v-slot="{ errors }">
@@ -75,17 +75,19 @@
         v-on="$listeners"
       />
     </div>
-  </div>
+  </ValidationObserver>
 </template>
 
 <script>
 import datePicker from 'v-calendar/lib/components/date-picker.umd';
+import { ValidationObserver } from 'vee-validate';
 import selectComponent from '../Select.vue';
 
 export default {
   components: {
     datePicker,
     selectComponent,
+    ValidationObserver,
   },
   props: {
     checkboxes: {

@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar__expand sticky-top z-40 bg-white shadow" ref="navbar">
+  <nav class="navbar navbar__expand sticky-top z-l bg-white shadow" ref="navbar">
     <div class="container flex items-center flex-wrap justify-center sm:justify-start">
       <router-link to="/" class="navbar__brand"><h1 class="logo">PETPET</h1></router-link>
       <toggleMenu class="absolute right-5 top-4 sm:hidden" :toggle.sync="isShow" />

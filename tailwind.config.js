@@ -92,6 +92,13 @@ module.exports = {
       31: "124px",
       32: "128px",
     },
+    zIndex: {
+      'xs': 10,
+      's': 20,
+      'm': 30,
+      'l': 40,
+      'xl': 50
+    },
     container: {
       center: true,
       padding: {

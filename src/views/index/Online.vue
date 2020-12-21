@@ -13,7 +13,7 @@
           <div class="rounded w-full bg-cover bg-no-repeat bg-center"
           :class="item.classes"
           :style="{ backgroundImage: `url(${item.imgUrl})` }"></div>
-          <div class="card__img__overlay z-20 h5 bg-black bg-opacity-40 hover:bg-opacity-0
+          <div class="card__img__overlay z-s h5 bg-black bg-opacity-40 hover:bg-opacity-0
             transition-all duration-300 flex items-center justify-center rounded">
             {{ item.title }}
           </div>
